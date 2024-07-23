@@ -1,0 +1,376 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body
+{
+   background-color:#333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.header
+{
+    display:flex;
+justify-content: center;
+align-items: center;
+gap:21rem;
+    background-color: rgba(26, 22, 22, 0.692);
+    position:relative;
+padding:1rem;
+
+}
+
+.heading
+{
+    text-decoration: underline;
+    font-style:oblique;
+    font-family: 'Dancing Script',cursive;
+    text-decoration: wavy;
+  font-size: medium;
+  color: aliceblue;
+
+}
+
+.navbar
+{
+    
+    display:none;
+    list-style-type: none;
+    color:black;
+    width:7rem;
+    border-right: 2px solid gray;
+    position:fixed;
+    overflow-y: auto;
+    background-color: #333;
+    transition: top 0.3s;
+    border-radius: 5px;
+    font-family: 'Dancing Script',cursive;
+}
+
+.menu-icon
+{
+  color:aliceblue;
+}
+
+.menu-icon:checked ~navbar {
+    top: 0; /* Bring the nav bar down to view */
+  }
+
+.navbar li a
+{
+
+color:aliceblue;
+text-decoration: none;
+display: block;
+padding: 1rem;
+
+}
+.imagesection
+{
+    background-color:red;;
+    height:70rem;
+    width: 59rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    margin-left: 220px; /* Adjust to account for navbar width */
+    margin-top: 120px; /* Adjust top margin to avoid navbar */
+    box-sizing: border-box
+}
+
+
+.navbar:hover
+{
+    cursor: pointer;
+}
+
+.navbar.active
+{
+    display:block;
+}
+
+
+
+
+
+.menu-icon:hover
+{
+    cursor: pointer;
+}
+.menu-icon
+{
+    font-size:2rem;
+
+}
+
+
+.nature 
+{
+    font-size: 1.5rem;
+}
+
+.travel 
+{
+    font-size: 1.5rem;
+}
+
+
+.food 
+{
+    font-size: 1.5rem;
+}
+.artdesign
+{
+    font-size: 1.5rem;
+}
+.animals
+{
+    font-size: 1.5rem;
+}
+
+input[type="text"],textarea
+{
+    box-sizing: border-box;
+    width:230px;
+    height: 45px;
+    text-align: center;
+    border-radius:0.3rem;
+    background-color: gray;
+color: aliceblue;
+}
+
+input[type="text"]::placeholder
+{
+    color: aliceblue;
+}
+
+
+
+button
+{
+    background-color: red;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 0.3rem;
+    color: aliceblue;
+}
+
+.image {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#333333e3;
+    width: 56.25rem;
+    cursor: pointer;
+    gap:1rem;
+    flex-wrap: wrap;
+    
+  }
+  
+  .image img {
+    width: 12.5rem;
+    margin: 2rem 0;
+    height: 11rem;
+
+  }
+  .image img:hover
+  {
+    border: 3px solid black;
+  }
+
+  .image figure {
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+
+.image figcaption {
+  font-size: 14px;
+  color: #666;
+  text-decoration: underline;
+}
+
+
+  
+  #inner-images {
+    display: flex; /* Flexbox for inner sets */
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    background-color: #333;
+    
+
+
+    /* Adjust as needed */
+  }
+
+  #inner-images .popupimages
+  {
+  
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transform: 0.3 ease;
+    
+    transition: opacity 0.5s ease,transform 0.5s ease;
+    /*margin-top: 20rem;*/
+    position: fixed;
+    z-index: 100;
+    top:300px;
+   height:-5rem;
+    margin: 0 auto;
+    
+
+  }
+
+  #inner-images .popupimages span
+  {
+
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  #inner-images .popupimages img
+  {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width:600px;
+    object-fit: cover;
+    
+   height:35.75rem;
+  }
+
+
+
+
+  
+  .inner-set {
+    display: block; 
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    flex-wrap: wrap; 
+    padding: 4rem;
+  
+
+  }
+
+
+/*.inner-set img.animate {
+  
+    opacity:1;
+    transform:translateX(0);
+
+}
+*/
+
+
+
+  .hidden
+  {
+    display: none !important;
+  }
+  
+  .inner-set img {
+    width: 13rem;
+    margin: 10px 0;
+    height:13rem ;
+   transition: transform 0.3 ease;
+   /* opacity:0.8;
+    transition: opacity 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: filter 0.5s ease;*/
+   
+   /* transform:translateX(100px);
+    transition: transform 0.5s ease-in-out,opacity 0.5s ease-in-out*/
+
+
+  }
+
+  .inner-set img:hover
+{
+    cursor: pointer;  
+    border-color: aliceblue;
+    border: 3px solid aliceblue;
+   
+   transform: scale(1.1);
+box-shadow: 0 4px 8px yellow;
+}
+  
+.clickable-image {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .clickable-image:hover {
+    transform: scale(1.1);
+  }
+
+
+
+@media(max-width:1024px)
+{
+
+.heading
+{
+    margin-right: 0;
+}
+
+.header
+{
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.navbar {
+    width:7rem; /* Full width for smaller screens */
+    height: auto;
+    left: 0;
+    top: 7rem; /* Adjust top position for smaller screens */
+    border-right: none;
+    border-bottom: 2px solid gray; /* Add bottom border */
+}
+
+.imagesection {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5rem; /* Adjust top margin for smaller screens */
+}
+
+.image
+{
+    flex-direction: column;
+}
+
+.image img
+{
+    margin: 2rem 0;
+}
+
+#inner-images .popupimages img 
+{
+    width:95%;
+}
+}
+
+

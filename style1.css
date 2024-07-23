@@ -1,0 +1,172 @@
+body {
+    text-align: center;
+    background-color:black;
+}
+
+.homeicon
+{
+    color: aliceblue;
+    text-align: left;
+}
+
+
+.homeicon a
+{
+    color: aliceblue;
+}
+
+.slider {
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.slide {
+    float: left;
+    width: 400px;
+}
+
+
+
+.slider img {
+    width:15.625rem;
+    height: 300px;
+    margin-top: 120px;
+    border-radius:5px;
+}
+
+/* Style for FontAwesome icons */
+button {
+    margin-top: -230px;
+    padding: 10px;
+    font-size: 24px; /* Adjust the icon size as needed */
+    background-color:white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: transparent;
+}
+
+/* Style for "Previous" button */
+#prev {
+    float: left;
+
+}
+
+/* Style for "Next" button */
+#next {
+    float: right;
+}
+
+
+
+
+
+
+.slide img
+{
+    transition:0.3 ease;
+    width: 300px;
+
+}
+
+.slide img.tilt
+{
+    transform: rotate(15deg);
+    
+}
+
+
+
+
+.gallery
+{
+
+background-color:rgba(128, 128, 128, 0.11);
+padding: 2rem;
+
+
+}
+
+
+
+
+.main-image {
+    width:300px;
+    height:250px ;
+    cursor: pointer;
+    border-radius:1rem;
+  }
+  .hidden-images {
+    display: none;
+    flex-wrap: wrap;
+    gap:0.125rem;
+    
+  }
+  .hidden-images img {
+    width: 17%;
+    height: 200px;
+    transition: transform 0.3s ease;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .hidden-images img:hover {
+    transform: scale(1.1);
+  }
+  .visible {
+    display: flex;
+  }
+
+
+ 
+  
+  .nature 
+  {
+      font-size: 1.5rem;
+  }
+  
+  .travel 
+  {
+      font-size: 1.5rem;
+  }
+  
+  
+  .food 
+  {
+      font-size: 1.5rem;
+  }
+  .artdesign
+  {
+      font-size: 1.5rem;
+  }
+  .animals
+  {
+      font-size: 1.5rem;
+  }
+
+@media(max-width:1024px)
+{
+.hidden-images img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:12rem;
+    gap:0rem;
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+
+}
